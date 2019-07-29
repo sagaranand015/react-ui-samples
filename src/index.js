@@ -7,7 +7,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import Hello from './components/Hello'
+import Hello from './components/Hello/Hello'
+import MHello from './components/MHello/MHello'
 
 let model = {clicks: 0}
 
@@ -17,7 +18,9 @@ function render() {
     //                          model.clicks += 1; render();
     //                      }}/>, document.getElementById('root'));
 
-    ReactDOM.render(<Hello date={ new Date().toString() } />, document.getElementById('root'));
+    // ReactDOM.render(<Hello date={ new Date().toString() } />, document.getElementById('root'));
+
+    ReactDOM.render(<MHello date={ new Date().toString() } />, document.getElementById('root'));
 }
 
 render();
